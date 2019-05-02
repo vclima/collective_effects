@@ -32,6 +32,32 @@ def line(x1, y1, x2, y2):
     t[3] = y2
     return t
 
+def ellipse_out(x1,y1,x2,y2,xc,yc,a,b):
+    t=EchoObj()
+    t[0]=x1
+    t[1]=y1
+    t[2]=x2
+    t[3]=y2
+    t[4]=xc+a
+    t[5]=yc+b
+    t[6]=xc-a
+    t[7]=yc-b
+    t[8]=0
+    return t
+
+def ellipse_in(x1,y1,x2,y2,xc,yc,a,b):
+    t=EchoObj()
+    t[0]=x1
+    t[1]=y1
+    t[2]=x2
+    t[3]=y2
+    t[4]=xc+a
+    t[5]=yc+b
+    t[6]=xc-a
+    t[7]=yc-b
+    t[8]=1
+    return t
+
 
 def circle_out(x, y, R, theta):
     "(x,y) is the position there the tangent lines cross."
