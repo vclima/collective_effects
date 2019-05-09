@@ -1,4 +1,4 @@
-#!/usr/bin/env python-sirius
+#!/home/Dvictor.lima/miniconda3/envs/pycolleff/bin/python
 
 import optparse
 import os
